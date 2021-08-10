@@ -1,0 +1,119 @@
+body {
+  font-family: Iosevka Curly;
+}
+
+.CodeMirror pre.CodeMirror-line, .CodeMirror-gutter, .CodeMirror-gutters, .CodeMirror-linenumber, .CodeMirror-scroll, .CodeMirror-sizer {
+    font-size: 14px;
+    font-family: Iosevka Curly;
+  	letter-spacing: 0.5px;
+  	line-height: 1.5em;
+}
+
+.editor-inner :is(.h1), .ls-block :is(h1) {
+    border-bottom: 0px;
+    margin: 1em 0 0;
+}
+
+.editor-inner :is(.h2), .ls-block :is(h2) {
+    border-bottom: 0px;
+    margin: .8em 0 0;
+}
+
+.editor-inner :is(.h3), .ls-block :is(h3) {
+    border-bottom: 0px;
+    margin: .5em 0 0;
+}
+
+:not(pre)>code {
+    font-family: Iosevka Curly;
+  	padding: 2px 5px!important;
+}
+
+/*.flex-row:hover .bullet {
+    background-color: var(--ls-block-bullet-color,#394b59);
+}*/
+
+.ls-block:hover .bullet {
+    background-color: var(--ls-block-bullet-color,#394b59);
+    z-index: 9999;
+}
+
+.bullet-container .bullet {
+    background-color: transparent;
+}
+
+.block-children {
+    border-left: 1px solid transparent;
+}
+
+.block-children:hover {
+    border-left: 1px solid;
+    border-left-color: var(--ls-guideline-color,#ddd);
+}
+
+.cm-s-solarized .CodeMirror-gutters {
+  background-color: transparent;
+}
+
+.cm-s-solarized .CodeMirror-linenumber {
+  color:transparent;
+}
+
+.cm-s-solarized .CodeMirror-lines {
+    background-color:#f7f7f7;
+    border-left:15px solid;
+    border-bottom:2px solid;
+    border-top:2px solid;
+    border-color:#f7f7f7;
+    border-radius:3px
+}
+
+.cm-s-solarized.CodeMirror {
+  margin-left:-2em;
+  z-index:-1;
+}
+
+.extensions__code-lang {
+    color: transparent;
+    background-color: transparent;
+}
+
+.px-3.pt-1.pb-2 .CodeMirror-linenumber {
+    background-color: #f7f7f7;
+}
+
+.px-3.pt-1.pb-2 .CodeMirror-gutter {
+    background-color: #f7f7f7;
+}
+
+.sidebar-item .CodeMirror-gutter {
+    background-color: #f7f7f7;
+}
+
+.sidebar-item .CodeMirror-linenumber {
+    background-color: transparent;
+}
+
+.sidebar-item .CodeMirror-lines {
+    background-color:#f3f3f3;
+    border-color:#f3f3f3;
+    border-color:#f3f3f3;
+}
+
+.embed-page .CodeMirror-lines {
+    background-color:#f3f3f3;
+    border-color:#f3f3f3;
+    border-color:#f3f3f3;
+}
+
+.embed-page .CodeMirror-gutter {
+    background-color: #f7f7f7;
+}
+
+.embed-page .CodeMirror-linenumber {
+    background-color: transparent;
+}
+
+textarea {
+    background-color: #f1eee8;
+}
